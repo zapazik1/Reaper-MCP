@@ -5726,6 +5726,16 @@ function script.script_read_result(p)
   return {value = value or ""}
 end
 
+-- fork: handlers of the zapazik1 fork (see CLAUDE.md)
+local my = {}
+
+function my.my_get_reaper_version(p)
+  local raw = reaper.GetAppVersion()
+  local version, platform = raw:match("^([^/]*)/?(.*)$")
+  return {version_string = raw, version = version, platform = platform}
+end
+-- fork: end
+
 -- ============================================================
 -- Command dispatch table
 -- ============================================================
@@ -5744,6 +5754,7 @@ for k, v in pairs(compose) do handlers[k] = v end
 for k, v in pairs(envelope) do handlers[k] = v end
 for k, v in pairs(tempo) do handlers[k] = v end
 for k, v in pairs(script) do handlers[k] = v end
+for k, v in pairs(my) do handlers[k] = v end -- fork:
 
 -- ============================================================
 -- UI-refresh / undo-block safety net

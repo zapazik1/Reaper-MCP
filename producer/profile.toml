@@ -1,0 +1,20 @@
+# fork: профиль MCP для режима продюсера (REAPER_MCP_PROFILE_FILE).
+# Основа — встроенный профиль "mixing" из reaper_mcp/tool_registry.py
+# плюс project_tools (project_get_overview, project_save, рендер),
+# без которых не выполнить правила producer/CLAUDE.md.
+# Свои модули my_* добавляй в include_modules, если они нужны продюсеру.
+
+name = "producer"
+
+include_modules = [
+  # = mixing
+  "transport_tools", "track_tools", "fx_tools", "inventory_tools",
+  "mix_tools", "sidechain_tools", "pipeline_tools", "send_tools",
+  "envelope_tools", "analysis_tools", "compose_edit_tools", "loops_tools",
+  # + для продюсера
+  "project_tools",
+  # + свои модули форка
+  "my_info",
+]
+
+instruction_packs = ["core", "mixing", "automation", "styles"]

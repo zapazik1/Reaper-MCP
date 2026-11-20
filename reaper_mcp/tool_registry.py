@@ -142,6 +142,7 @@ _EXPECTED_MODULES = frozenset({
     "patterns_tools", "pipeline_tools", "project_tools", "quantize_tools",
     "script_tools", "selection_tools", "send_tools", "sidechain_tools", "take_tools",
     "template_tools", "tempo_tools", "track_tools", "transport_tools",
+    "my_info",  # fork:
 })
 
 

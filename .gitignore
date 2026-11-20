@@ -72,3 +72,9 @@ docs/FUTURE_IDEAS.md
 .cookie
 .tmp_song/
 .tmp_song_gen.py
+
+# fork: track the fork's agents and skills (.claude/ is ignored above),
+# keep machine-local files out
+!.claude/
+.claude/settings.local.json
+.claude/skills/reascript-api/references/reascripthelp.html

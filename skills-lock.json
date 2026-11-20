@@ -1,0 +1,40 @@
+{
+  "version": 2,
+  "skills": {
+    "reaper-jsfx-audio": {
+      "source": "mthines/jsfx-agent-skills",
+      "commit": "0c86924c2a8892fc33228ad36dce0227e72a11be",
+      "sourceType": "github",
+      "skillPath": "skills/reaper-jsfx-audio/SKILL.md",
+      "computedHash": "ae8e3e20afbdf8f89afe2af57f6779eb2680224063c5cb86f8d9ea0a70a60f27"
+    },
+    "reaper-jsfx-core": {
+      "source": "mthines/jsfx-agent-skills",
+      "commit": "0c86924c2a8892fc33228ad36dce0227e72a11be",
+      "sourceType": "github",
+      "skillPath": "skills/reaper-jsfx-core/SKILL.md",
+      "computedHash": "6f4c6c5153412af86fa46a2b5ef48f658b512157bd5215606030e742069d792d"
+    },
+    "reaper-jsfx-midi": {
+      "source": "mthines/jsfx-agent-skills",
+      "commit": "0c86924c2a8892fc33228ad36dce0227e72a11be",
+      "sourceType": "github",
+      "skillPath": "skills/reaper-jsfx-midi/SKILL.md",
+      "computedHash": "de27b2e2c7f07f8e2643be1b6e0b54c8b9fa6f6470ae059e598db23b0699ac7d"
+    },
+    "reaper-jsfx-synth": {
+      "source": "mthines/jsfx-agent-skills",
+      "commit": "0c86924c2a8892fc33228ad36dce0227e72a11be",
+      "sourceType": "github",
+      "skillPath": "skills/reaper-jsfx-synth/SKILL.md",
+      "computedHash": "c683cda78fa477cabb28d9b25c7a78a64943ce3676f4602120c0ce041ae7d39c"
+    },
+    "reaper-jsfx-ui": {
+      "source": "mthines/jsfx-agent-skills",
+      "commit": "0c86924c2a8892fc33228ad36dce0227e72a11be",
+      "sourceType": "github",
+      "skillPath": "skills/reaper-jsfx-ui/SKILL.md",
+      "computedHash": "3e2e7e45bc59b1f59d71de549894460a2520154d08a8d631060c2ba916687d33"
+    }
+  }
+}
